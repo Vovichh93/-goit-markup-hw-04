@@ -160,7 +160,7 @@ img {
 }
 /* ---------------------ГЛАВНЫЙ ЗАГОЛОВОК------------------- */
 .main-section {
-  /* background: #2f303a; */
+  background: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(/images/Img-min.jpg);
 
@@ -367,6 +367,50 @@ img {
   color: #ffffff;
 }
 
+/* ------------Клиенты---------- */
+.section-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.title-clients {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
+}
+.list-clients {
+  display: flex;
+  justify-content: center;
+}
+
+.item-clients + .item-clients {
+  margin-left: 30px;
+}
+
+.link-clients {
+  color: #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+}
+.link-clients:hover,
+.link-clients:focus {
+  color: #2196f3;
+  border-color: #2196f3;
+}
+.icon-clients {
+  fill: currentColor;
+}
+
 /* -------------КОНТАКТЫ----------------- */
 
 .contacts-mail:hover,
@@ -386,7 +430,13 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+.futter-container {
+  display: flex;
+}
+.address-block {
+  display: flex;
+  flex-direction: column;
+}
 .futter-logo-color {
   color: #ffffff;
 }
@@ -421,6 +471,50 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-address-color);
+}
+.tittle-socials {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.socials-block {
+  margin-top: 12px;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  margin-left: 70px;
+}
+.social-list {
+  display: flex;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-item {
+  width: 44px;
+  height: 44px;
+}
+.social-link {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: #2196f3;
+}
+
+.social-icon {
+  fill: #ffffff;
 }
 
 /* --------------PORTFOLIO --------------*/
